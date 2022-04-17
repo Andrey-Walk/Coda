@@ -178,7 +178,7 @@ body {
 
 .page-footer {
   padding: 40px 0;
-  background-color: #39383F;
+  background-color: #FFFFFF;
   text-align: center;
 }
 
@@ -186,7 +186,7 @@ body {
   margin-right: 56px;
   padding-bottom: 10px;
   padding-top: 10px;
-  color: #ffffff;
+  color: black;
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: left;
@@ -196,7 +196,7 @@ body {
 .page-footer a:focus,
 .page-footer a:hover {
   opacity: 1;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid black;
 }
 
 .page-footer a:active {
