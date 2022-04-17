@@ -17,7 +17,7 @@ body {
 }
 
 .page-header {
-  margin: 0 0 140px;
+  margin: 0 0 10px;
   padding: 60px 0;
   background-image: linear-gradient(to top, white 0%, transparent 100%), url(img/h2.gif);
   background-size: auto;
