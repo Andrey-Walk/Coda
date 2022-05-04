@@ -66,9 +66,9 @@ body {
 	padding: 15px;	
 	cursor: pointer;
 }
-.post-item * {
+/*.post-item * {
 	transition: .3s linear;
-}
+}*/
 .item-content {
 	background: #FFFFFF;
     padding: 40px;
