@@ -135,7 +135,15 @@ img {
     border-top: none;
 }
 
+.tabcontent {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
 
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 
 
 
@@ -462,12 +470,28 @@ a {
   font-weight: 600;
 }
 
-.tabcontent {
-    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
 }
 
-/* Go from zero to full opacity */
-@keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
