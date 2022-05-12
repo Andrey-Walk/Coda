@@ -25,7 +25,10 @@
 	<!-- Tab links -->
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Main')" id="defaultOpen"> <img class="we" src="img/Logo_main.png" width="20 em" height="20 em"></button>
-  <button class="tablinks" onclick="openCity(event, 'Clips')">Видеоклипы</button>
+  <button class="tablinks" onclick="openCity(event, 'Clips')">Видеопостановки</button>
+  <button class="tablinks" onclick="openCity(event, 'Show')">Выступления</button>
+  <button class="tablinks" onclick="openCity(event, 'Training')">Чемпионаты</button>
+  <button class="tablinks" onclick="openCity(event, 'Training')">Тренировки</button>
   <button class="tablinks" onclick="openCity(event, 'Photos')">Фотогалерея</button>
   <button class="tablinks" onclick="openCity(event, 'Blog')">Блог</button>
 </div>
@@ -39,9 +42,63 @@
 </div>
 
 <div id="Clips" class="tabcontent">
-  <h3></h3>
-  <p></p>
-  <iframe src="https://vk.com/video_ext.php?oid=-17550017&id=456239032&hash=55b0f8084cab664a" width=device-width, frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+  
+
+<button class="accordion">Ведьмаки</button>
+<div class="panel">
+  <iframe src="https://vk.com/video_ext.php?oid=-17550017&id=456239124&hash=a931fa834787696f" width="33%"  frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+  <iframe src="https://vk.com/video_ext.php?oid=-17550017&id=456239127&hash=69dd72227a10a49a" width="33%"  frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+  <iframe src="https://vk.com/video_ext.php?oid=-17550017&id=456239125&hash=609f8675b2e49d79" width="33%"  frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+  
+</div>
+
+<button class="accordion">Скайрим</button>
+<div class="panel">
+ <iframe src="https://vk.com/video_ext.php?oid=-17550017&id=456239126&hash=74fb5ec5e176041a" width="33%"  frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+ <iframe src="https://vk.com/video_ext.php?oid=-17550017&id=456239081&hash=4383a5179c7a9b94" width="33%"  frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+ <iframe src="https://vk.com/video_ext.php?oid=-17550017&id=456239129&hash=657ed56f957706f5" width="33%"  frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+ <iframe src="https://vk.com/video_ext.php?oid=-17550017&id=456239120&hash=a6c9f8873c44717e" width="33%"  frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+ <iframe src="https://vk.com/video_ext.php?oid=-17550017&id=456239121&hash=d67472f7509958b1" width="33%"  frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+ <iframe src="https://vk.com/video_ext.php?oid=-17550017&id=456239122&hash=6b8381cbb9fbb77b" width="33%"  frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe> 
+ <iframe src="https://vk.com/video_ext.php?oid=-17550017&id=456239123&hash=db78312b330026bd" width="33%"  frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+ <iframe src="https://vk.com/video_ext.php?oid=-17550017&id=456239082&hash=4a1fafbd9c4d943e" width="33%"  frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+ <iframe src="https://vk.com/video_ext.php?oid=-17550017&id=456239079&hash=c21d97e5a71f191f" width="33%"  frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+</div>
+
+<button class="accordion">Сверхъестественное</button>
+<div class="panel">
+  <iframe src="https://vk.com/video_ext.php?oid=-17550017&id=456239047&hash=82674eca45fa57b1" width="33%"  frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+  <iframe src="https://vk.com/video_ext.php?oid=-17550017&id=456239048&hash=cc4ac575d7dee3a7" width="33%"  frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>  
+ </div>
+ 
+ <button class="accordion">Индастриал</button>
+<div class="panel">
+  <iframe src="https://vk.com/video_ext.php?oid=-17550017&id=456239049&hash=01323cc3ea67438d" width="33%"  frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+  <iframe src="https://vk.com/video_ext.php?oid=-17550017&id=456239042&hash=83858a3b2de02353" width="33%"  frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+  </div>
+  
+<button class="accordion">Викинги</button>
+<div class="panel">
+
+
+  </div>  
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 
 </div>
 
@@ -148,11 +205,7 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-</script>
 
-
-
-<script>
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
